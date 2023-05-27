@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITE COMPLETO</title>
+    <link rel="stylesheet" href="site.css">
+</head>
+<body>
+    <!--PRIMEIRA PARTE DO SITE-->
+    <div class="quadrado1">
+        <div id="headerid" class="header">
+            <div class="logo">
+                <p>Logo</p>
+            </div>
+            <div class="menu">
+                <a href="">ABOUT</a>
+                <a href="">HOME</a>
+                <a href="">LOGIN</a>
+                <a href="">MORE INFORMATION</a>
+            </div>
+        </div>
+    </div>
+    <div class="quadrado2">
+        <div class="quadradobranco">
+            <p>TEXTO TESTE</p>
+        </div>
+    </div>
+    
+    <script>
+        window.addEventListener('scroll', function() {
+            var header = document.getElementById('headerid');
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > 0) {
+                header.classList.add('header-scrolled');
+                header.classList.remove('header-top');
+            } else {
+                header.classList.add('header-top');
+                header.classList.remove('header-scrolled');
+            }
+            });
+    </script>
+    
+</body>
+</html>
